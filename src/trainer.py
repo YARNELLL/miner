@@ -95,6 +95,7 @@ class Trainer(BaseTrainer):
                       score_type=args.score_type, dropout=args.dropout, num_category=len(self._category2id),
                       category_embed_dim=args.category_embed_dim, category_pad_token_id=self._category2id['pad'],
                       category_embed=category_embed)
+        model = nn.DataParallel(model)
         model.to(self._device)
         model.zero_grad(set_to_none=True)
 

@@ -4,6 +4,9 @@ import arguments
 from src import utils
 from src.trainer import Trainer
 
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,1"
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 def _train(args):
     trainer = Trainer(args)
