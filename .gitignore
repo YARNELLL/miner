@@ -159,7 +159,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# 数据和预训练模型
+# 数据、预训练模型和训练结果
 data/
 roberta-base/
 train/

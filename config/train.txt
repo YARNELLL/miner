@@ -31,12 +31,12 @@
 
 # Train args
 --npratio 4
---train_batch_size 256
+--train_batch_size 512
 --eval_batch_size 64
 --dataloader_drop_last
 --dataloader_num_workers 64
 --dataloader_pin_memory
---gradient_accumulation_steps 4
+--gradient_accumulation_steps 2
 --num_train_epochs 5
 --learning_rate 2e-5
 --warmup_ratio 0.1
